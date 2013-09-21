@@ -1,0 +1,26 @@
+{
+  "name": "iPedal",
+  "version": "0.0.0",
+  "description": "A pedal for iPad.",
+  "main": "ipedal.js",
+  "dependencies": {
+    "express": "~3.4.0",
+    "socket.io": "~0.9.16",
+    "socket.io-client": "~0.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "iPedalServer": "./ipedal.js"
+  },
+  "repository": "",
+  "keywords": [
+    "ipad",
+    "pedal",
+    "realtime"
+  ],
+  "author": "Thai Pangsakulyanont <org.yi.dttvb@gmail.com>",
+  "license": "MIT"
+}
