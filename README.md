@@ -42,4 +42,6 @@ Events are Sent To Your App!
 When your hands are full, use iPedal!
 -------------------------------------
 
+npm install ipedal
+==================
 
