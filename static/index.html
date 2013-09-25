@@ -29,15 +29,25 @@ body {
 <script>
 
 var socket = io.connect()
+
+var updateTouch =
 window.ontouchstart =
 window.ontouchend =
 function updateTouch(e) {
   var pressure = e.touches.length
-  document.title = pressure
   document.getElementById('overlay').style.opacity =
     Math.pow(pressure / 11, 1/3)
   socket.emit('pressure', pressure)
   e.preventDefault()
+}
+
+window.onmousedown = function(e) {
+  e.touches = { length: 1 }
+  updateTouch(e)
+}
+window.onmouseup = function(e) {
+  e.touches = { length: 0 }
+  updateTouch(e)
 }
 
 </script>
